@@ -1,0 +1,581 @@
+{
+	"info": {
+		"_postman_id": "1628f571-3671-4872-a9b4-95ad8e4b2135",
+		"name": "Voiture Occasion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31839074"
+	},
+	"item": [
+		{
+			"name": "Signin Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/public/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"public",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Ajout Transmission",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1NTkxMzZ9.9J0oDS5z0M-8m-Fz2GyMT0smIaHR7cyXIDeJVCuF1Qs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomTransmission\":\"Automatique\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/admin/transmission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"transmission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Ajout Moteur",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1NTkxMzZ9.9J0oDS5z0M-8m-Fz2GyMT0smIaHR7cyXIDeJVCuF1Qs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomMoteur\":\"Diesel\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/admin/moteur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"moteur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Ajout Marque",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1NTkxMzZ9.9J0oDS5z0M-8m-Fz2GyMT0smIaHR7cyXIDeJVCuF1Qs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomMarque\":\"Renault\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/admin/marque",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"marque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Ajout Corps",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1NTkxMzZ9.9J0oDS5z0M-8m-Fz2GyMT0smIaHR7cyXIDeJVCuF1Qs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomCorps\":\"Plaisir\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/admin/corp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"corp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Ajout Modele",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomModele\":\"Clio 3\",\n    \"idMarque\":\"MRQ00001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/admin/modele",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"modele"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "riana@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "riana",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/public/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"public",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER Ajout annonce",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMiIsInVzZXJuYW1lIjoiVVNSMDAwMDIiLCJleHAiOjE3MDY1Nzc3NDV9.3tv0IfQD6q_7GxcIWILQ7t2nD-tJQwoVEXJaPNfq9UI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image\":\"image.png\",\n    \"corps\":\"CRP00001\",\n    \"marque\":\"MRQ00001\",\n    \"modele\":\"MDL00002\",\n    \"transmission\":\"TRSM00001\",\n    \"moteur\":\"MTR00003\",\n    \"description\":\"Bon etat, 4 portes, 5 places, 4 cylindres\",\n    \"prix\":36000000,\n    \"annee\":\"2011-07-06\",\n    \"places\":5,\n    \"portes\":4,\n    \"vmax\":150,\n    \"consommation\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/user/annonce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"annonce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER Liste annonce par utilisateur",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMiIsInVzZXJuYW1lIjoiVVNSMDAwMDIiLCJleHAiOjE3MDY1NjEyNDl9.9NPw1BN2LryPl2kHu8YRfwrgjAsF7bk8x6sdgWMANnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/user/annonces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"annonces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER Detail annonce par utilisateur",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMiIsInVzZXJuYW1lIjoiVVNSMDAwMDIiLCJleHAiOjE3MDY1NjEyNDl9.9NPw1BN2LryPl2kHu8YRfwrgjAsF7bk8x6sdgWMANnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/user/annonce/ANC0000000002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"annonce",
+						"ANC0000000002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER Ajout annonce au favoris",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMiIsInVzZXJuYW1lIjoiVVNSMDAwMDIiLCJleHAiOjE3MDY1NjEyNDl9.9NPw1BN2LryPl2kHu8YRfwrgjAsF7bk8x6sdgWMANnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/user/favoris/ANC0000000003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"favoris",
+						"ANC0000000003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER Liste favoris par utilisateur",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMiIsInVzZXJuYW1lIjoiVVNSMDAwMDIiLCJleHAiOjE3MDY1NjEyNDl9.9NPw1BN2LryPl2kHu8YRfwrgjAsF7bk8x6sdgWMANnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/user/favoris",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"favoris"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/public/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"public",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Validation annonce",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1NjU3Njd9.qGO3CqTv-cWs-kXdC0dAcFknSdznOctBsOqJLhRxCSU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/admin/annonce/ANC0000000002/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"annonce",
+						"ANC0000000002",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN Liste annonce reste a valider",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1NjU3Njd9.qGO3CqTv-cWs-kXdC0dAcFknSdznOctBsOqJLhRxCSU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/admin/annonces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"annonces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUBLIC Liste annonce",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/public/annonces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"public",
+						"annonces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUBLIC Recherche annonce",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Admin stat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJVU1IwMDAwMSIsInVzZXJuYW1lIjoiVVNSMDAwMDEiLCJleHAiOjE3MDY1ODkwNjl9.LMgP5K8JmE-1Z9_CmtQ0SzNvO5oN-DlfU1P9n9kZV44",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/admin/stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"admin",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
